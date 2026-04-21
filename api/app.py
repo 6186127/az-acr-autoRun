@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/health')
 def health():
-    """Health check endpoint for container orchestrators."""
+    """Health check endpoint for container orchestrators.----lynn verson 222 for auto run task"""
     return jsonify({
         "status": "healthy",
         "version": os.getenv("APP_VERSION", "1.0.0")
